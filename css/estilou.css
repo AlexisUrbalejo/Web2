@@ -1,0 +1,144 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 22, 2024, 4:13:19 PM
+    Author     : pulgu
+*/
+
+h1{
+    color:white;
+    text-shadow:2px 2px 0px #FEA808;
+    color:white;
+    font-family: "Barlow Condensed",sans-serif;
+    text-align: center;
+    font-weight:800px;
+    font-size:60px;
+ }
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ /*Fuentes*/
+.barlow-condensed-thin {
+font-family: "Barlow Condensed", sans-serif;
+font-weight: 100;
+font-style: normal;
+}
+
+.barlow-condensed-extralight {
+font-family: "Barlow Condensed", sans-serif;
+font-weight: 200;
+font-style: normal;
+}
+
+.barlow-condensed-light {
+font-family: "Barlow Condensed", sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+
+.barlow-condensed-regular {
+font-family: "Barlow Condensed", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.barlow-condensed-medium {
+font-family: "Barlow Condensed", sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+
+.barlow-condensed-semibold {
+font-family: "Barlow Condensed", sans-serif;
+font-weight: 600;
+font-style: normal;
+}
+
+.barlow-condensed-bold {
+font-family: "Barlow Condensed", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+
+.barlow-condensed-extrabold {
+font-family: "Barlow Condensed", sans-serif;
+font-weight: 800;
+font-style: normal;
+}
+
+.barlow-condensed-black {
+font-family: "Barlow Condensed", sans-serif;
+font-weight: 900;
+font-style: normal;
+}
+
+.barlow-condensed-thin-italic {
+font-family: "Barlow Condensed", sans-serif;
+font-weight: 100;
+font-style: italic;
+}
+
+.barlow-condensed-extralight-italic {
+font-family: "Barlow Condensed", sans-serif;
+font-weight: 200;
+font-style: italic;
+}
+
+.barlow-condensed-light-italic {
+font-family: "Barlow Condensed", sans-serif;
+font-weight: 300;
+font-style: italic;
+}
+
+.barlow-condensed-regular-italic {
+font-family: "Barlow Condensed", sans-serif;
+font-weight: 400;
+font-style: italic;
+}
+
+.barlow-condensed-medium-italic {
+font-family: "Barlow Condensed", sans-serif;
+font-weight: 500;
+font-style: italic;
+}
+
+.barlow-condensed-semibold-italic {
+font-family: "Barlow Condensed", sans-serif;
+font-weight: 600;
+font-style: italic;
+}
+
+.barlow-condensed-bold-italic {
+font-family: "Barlow Condensed", sans-serif;
+font-weight: 700;
+font-style: italic;
+}
+
+.barlow-condensed-extrabold-italic {
+font-family: "Barlow Condensed", sans-serif;
+font-weight: 800;
+font-style: italic;
+}
+
+.barlow-condensed-black-italic {
+font-family: "Barlow Condensed", sans-serif;
+font-weight: 900;
+font-style: italic;
+}

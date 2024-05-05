@@ -1,0 +1,387 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 22, 2024, 7:30:39 AM
+    Author     : pulgu
+*/
+
+
+body{
+    background-color:#E3B5D0;
+}
+
+html, body {
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.header{
+    background-image: url("../Imagenes/header.png");
+    width:100%;
+    height:110px;
+    position:relative;
+}
+
+#user{
+    color:#FEA808;
+    position:absolute;
+    font-size:60px;
+    right:160px;
+    top:-12px;
+}
+
+#carrito{
+    color:#FEA808;
+    position:absolute;
+    font-size:60px;
+    right:60px;
+    top:-12px;
+    
+    
+}
+
+#carrito:hover{
+    color:#F19D00;
+}
+
+#user:hover{
+    color:#F19D00;
+}
+
+#i,#m,#u,#c,#me,#co{
+    text-decoration:none;
+    text-shadow:2px 2px 0px #FEA808;
+    color:white;  
+    position:relative;
+}
+
+#i:hover,#m:hover,#u:hover,#c:hover,#me:hover,#co:hover{
+    color:#FFBD59;
+}
+
+button:hover{
+    color:#E3B5D0;
+}
+
+.barra{
+    display: block;
+    margin: 0 auto;
+    top: 58%;
+    transform: translateY(-470%);
+    margin-left:60px;
+    position: relative;
+    z-index: 999;
+    font-family: "Barlow Condensed",sans-serif;
+    font-size: 25px;
+    font-weight:800;
+}
+
+#logo {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 58%;
+    transform: translateY(-50%);
+   
+}
+
+#cuerpo{
+    position:relative;
+}
+#rolon{  
+    
+    position:absolute;
+    top:-100;
+    transform: translateY(-15%);
+    left:-350px;
+}
+
+#foto1{
+   
+    position:relative;
+    right:-500px;
+    margin-bottom: 0;
+    z-index:-1;
+}
+
+#bienvenida{
+    display:block;
+    color:white;
+    font-family: "Barlow Condensed",sans-serif;
+    font-size: 35px;
+    text-align:center;
+    position:relative;
+    right:450px;
+    bottom:250px;
+    z-index: 1;
+    
+}
+
+.boton1{
+    display: block;
+    border-radius:12px;
+    font-family: "Barlow Condensed",sans-serif;
+    font-size: 25px;
+    background-color:#BC508F;
+    color:white;
+    border-color:white;
+    transform:translate(230px,-250px);
+}
+
+#footer {
+    background-color: #FDA200; 
+    width:100%;
+    color: white; 
+    padding: 20px; 
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    height: 8rem;
+}
+
+#footeri {
+    background-color: #FDA200; 
+    width:100%;
+    color: white; 
+    padding: 20px; 
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    height: 8rem;
+}
+
+#id{
+    font-family: "Barlow Condensed",sans-serif;
+}
+
+.redes-sociales i{
+    margin-right: 10px;
+}
+
+
+.icon-bar a:hover,
+.icon-bar a:focus {
+  text-decoration: none;
+}
+
+.icon-bar a:hover,
+.icon-bar a:focus {
+  color: initial;
+}
+
+.icon-bar a {
+  padding:10px;
+  transition: all 0.3s ease; 
+  color: white; 
+  font-size: 36px; 
+}
+
+#formulario {
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin: auto; /* Centra el contenedor verticalmente */
+    width: 80%; /* Ancho del contenedor */
+}
+#formulario {
+    text-align: center;
+    margin: auto; 
+    width: 80%; 
+    height: 80%; 
+    font-size: 25px;
+}
+
+#formulario input[type="email"],
+#formulario input[type="password"] {
+    width: 80%; 
+    height: 40px; 
+    margin-bottom: 20px; 
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+#formulario button {
+    width: 50%; 
+    height: 50px; 
+    border-radius: 10px;
+    background-color: #FEA808; 
+    color: white; 
+    font-size: 18px; 
+    border: none; 
+    cursor: pointer; 
+}
+
+#formulario button:hover {
+    background-color: #F19D00; 
+}
+
+#tienes{
+    font-family: arial;
+    text-shadow:none;
+    font-size:15px;
+}
+
+/* Estilos para la ventana modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-contenido {
+    background-image: url("../Imagenes/header.png");
+    font-family: "Barlow Condensed",sans-serif;
+    color:white;
+    text-shadow:2px 2px 0px #FEA808;
+    color:white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 2px solid #FEA808;
+    width: 30%;
+    height:60%;
+    -webkit-animation-name: animarsuperior;
+    -webkit-animation-duration: 0.5s;
+    animation-name: animarsuperior;
+    animation-duration: 0.5s
+}
+
+.cerrar-modal {
+    color: #FEA808;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cerrar-modal:hover,
+.cerrar-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+@keyframes animarsuperior {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+
+
+
+
+/*Fuentes*/
+.barlow-condensed-thin {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.barlow-condensed-extralight {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.barlow-condensed-light {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.barlow-condensed-regular {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.barlow-condensed-medium {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.barlow-condensed-semibold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.barlow-condensed-bold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.barlow-condensed-extrabold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.barlow-condensed-black {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.barlow-condensed-thin-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.barlow-condensed-extralight-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.barlow-condensed-light-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.barlow-condensed-regular-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.barlow-condensed-medium-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.barlow-condensed-semibold-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.barlow-condensed-bold-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.barlow-condensed-extrabold-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.barlow-condensed-black-italic {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
