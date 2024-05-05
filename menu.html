@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Menu</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://kit.fontawesome.com/7f369602d8.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="css/estiloin.css" rel="stylesheet" type="text/css">
+        <link href="css/estilome.css" rel="stylesheet" type="text/css">
+        <script src="js/jsi.js"></script>
+    </head>
+    <body>
+             <!--Header -->
+    <section id='header'>
+        <div class="header">
+            <img id="logo" src="Imagenes/logo.png" width="210px" height="150px">   
+            <div class='barra'>
+            <a href='index.html' id='i'> Inicio &emsp;</a>
+            <a href='menu.html' id='m'> Menú &emsp; </a>
+            <a href='ubicacion.html' id='u'> Ubicación &emsp;</a>
+            <a href='conocenos.html' id='c'> Conócenos &emsp;</a>
+            <a href='merch.html' id='me'> Merch &emsp;</a>
+            <a href='contacto.html' id='co'> Contacto &emsp;</a>
+            <i class="fa-solid fa-cart-shopping" id='carrito'></i>
+            <i class="fa-solid fa-circle-user" id='user'></i>
+            </div>
+            
+<div id="miModal" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar-modal">&times;</span>
+        <!-- Formulario-->
+        <div id="formulario">
+            <div><h1>Iniciar Sesión</h1> </div>
+            <form action="index.html" method="POST" >
+                
+                <div class="col"  >
+                      Correo: 
+                </div> 
+                <div class="col">
+                    <input type="email" id="email" name="email" required >               
+                </div>
+                <div class="col" id="nombre">
+                      Contraseña:
+                </div> 
+                <div class="col">
+                    <input type="password" id="contra1" name="contra1" required> 
+                    
+                    <p id='tienes'>¿No tienes cuenta? <a href='sesion.html' id='crear'> Crear Cuenta.</a> </p>
+                    <button name="env"  id="env" onclick="return validaPass()">Ingresar</button>              
+                    
+                </div>
+                
+           
+            </form>
+        </div>
+    </div>
+</div>
+</section>
+             
+               <!-- shop section -->
+               <div id='menu'> 
+               <h1>MENÚ</h1>
+               </div>
+               
+               <div id='roles'> 
+               <h1>ROLES</h1>
+               </div>
+     
+  <section class="shop_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="Imagenes/clasico.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  CLÁSICO
+                </h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="Imagenes/manzana.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  MANZANA
+                </h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="Imagenes/moras.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  MORAS
+                </h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="Imagenes/duo.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  DÚO
+                </h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="Imagenes/fresa.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  FRESA CHEESECAKE
+                </h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="Imagenes/lotus.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                 LOTUS BISCOFF
+                </h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="Imagenes/smores.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  SMORE´S
+                </h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="Imagenes/nuez.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  NUEZ
+                </h6>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="shop_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="Imagenes/toffee.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                    TOFFEE NUT
+                </h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="Imagenes/cajeta.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  CAJETA ROL
+                </h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="Imagenes/sanwis.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  SÁNDWICH ROLÓN
+                </h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="Imagenes/bites.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  ROLÓN BITES
+                </h6>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+
+ 
+             <!-- Footer -->
+        <section id='footer'>
+        <div class="footer">
+            <div class="icon-bar">
+                <a class="active" href="https://www.facebook.com/rolonens"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/rolon_ens/?hl=es-la"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@rolon_ens?lang=en  "><i class="fa-brands fa-tiktok"></i></a>
+                <br>
+                <p id='cr'>Todos los derechos reservados Rolón 2024 <i class="fa-solid fa-copyright"></i><p>
+            </div>
+        </div>
+    </section>
+    </body>
+</html>
