@@ -16,6 +16,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <script src="https://kit.fontawesome.com/7f369602d8.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link href="css/estiloin.css" rel="stylesheet">
+        <link href="css/estilocon.css" rel="stylesheet">
         <script src="js/jsi.js"></script>
     </head>
     <body>
@@ -34,44 +35,82 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             <i class="fa-solid fa-circle-user" id='user'></i>
             </div>
             
-<div id="miModal" class="modal">
-    <div class="modal-contenido">
-        <span class="cerrar-modal">&times;</span>
-        <!-- Formulario-->
-        <div id="formulario">
-            <div><h1>Iniciar Sesión</h1> </div>
-            <form action="index.html" method="POST" >
+    <div id="miModal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar-modal">&times;</span>
+            <!-- Formulario-->
+            <div id="formulario">
+                <div><h1>Iniciar Sesión</h1> </div>
+                <form action="index.html" method="POST" >
                 
-                <div class="col"  >
-                      Correo: 
-                </div> 
-                <div class="col">
-                    <input type="email" id="email" name="email" required >               
-                </div>
-                <div class="col" id="nombre">
-                      Contraseña:
-                </div> 
-                <div class="col">
-                    <input type="password" id="contra1" name="contra1" required> 
+                    <div class="col"  >
+                        Correo: 
+                    </div> 
+                    <div class="col">
+                        <input type="email" id="email" name="email" required >               
+                    </div>
+                    <div class="col" id="nombre">
+                        Contraseña:
+                    </div> 
+                    <div class="col">
+                        <input type="password" id="contra1" name="contra1" required> 
                     
-                    <p id='tienes'>¿No tienes cuenta? <a href='sesion.html' id='crear'> Crear Cuenta.</a> </p>
-                    <button name="env"  id="env" onclick="return validaPass()">Ingresar</button>              
+                        <p id='tienes'>¿No tienes cuenta? <a href='sesion.html' id='crear'> Crear Cuenta.</a> </p>
+                        <button name="env"  id="env" onclick="return validaPass()">Ingresar</button>              
                     
-                </div>
+                    </div>
                 
            
-            </form>
+                </form>
+            </div>
         </div>
-    </div>
+    </div>            
 </div>
+</section>
 
+<section id="cuerpo">
+    <div class="carousel">
+        <img src="Imagenes/fotoinicio.jpg" alt="Image 1">
+        <img src="Imagenes/equipo.jpeg" alt="Image 2">
+        <img src="carreta.jpg" alt="Image 3">
+    </div>
+
+
+    <div id="tit1">
+        <h1>SOBRE NOSOTROS</h1>
+    </div>
+
+    <div id="texto">
+    <p>
+        Somos un pequeño negocio en Ensenada dedicado a hacer sonreír a la gente con <br>
+        nuestros deliciosos roles de canela caseros y bebidas especiales. Cada rollo que <br>
+        horneamos está lleno de amor y tradición, y estamos orgullosos de formar parte de <br>
+        esta vibrante comunidad.
+    </p>
+
+    <p>
+        En Rolón creemos en el poder de los pequeños placeres para crear grandes <br> 
+        momentos de felicidad. Nuestros roles de canela están hechos con los mejores <br> 
+        ingredientes y mucho cariño, para que cada bocado sea una experiencia <br>
+        memorable.
+    </p>
+
+    <p>
+        Gracias por elegirnos para endulzar tus momentos especiales. <br>
+        ¡Enrólate la vida!
+    </p>
+
+    <p>
+        Saludos dulces, <br>
+        El Equipo de Rolón.         
+    </p>
+    </div>
+
+</section>
             
-        </div>
-    </section>
-            
-        </div>
-             <!-- Footer -->
-        <section id='footer'>
+</div>
+<!-- Footer -->
+<section id='footer'>
         <div class="footer">
             <div class="icon-bar">
                 <a class="active" href="https://www.facebook.com/rolonens"><i class="fa fa-facebook"></i></a>
@@ -81,6 +120,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                 <p id='cr'>Todos los derechos reservados Rolón 2024 <i class="fa-solid fa-copyright"></i><p>
             </div>
         </div>
-    </section>
-    </body>
+</section>
+</body>
 </html>
