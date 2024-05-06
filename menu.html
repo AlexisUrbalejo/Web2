@@ -17,7 +17,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link href="css/estiloin.css" rel="stylesheet" type="text/css">
         <link href="css/estilome.css" rel="stylesheet" type="text/css">
-        <script src="js/jsi.js"></script>
+        <script src="js/jsm.js"></script>
     </head>
     <body> 
              <!--Header -->
@@ -35,30 +35,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             <i class="fa-solid fa-circle-user" id='user'></i>
             </div>
             
-<div id="miModal" class="modal">
-    <div class="modal-contenido">
-        <span class="cerrar-modal">&times;</span>
-        <!-- Formulario-->
-        <div id="formulario">
-            <div><h1>Iniciar Sesión</h1> </div>
-            <form action="index.html" method="POST" >
-                
-                <div class="col"  >
-                      Correo: 
-                </div> 
-                <div class="col">
-                    <input type="email" id="email" name="email" required >               
-                </div>
-                <div class="col" id="nombre">
-                      Contraseña:
-                </div> 
-                <div class="col">
-                    <input type="password" id="contra1" name="contra1" required> 
-                    
-                    <p id='tienes'>¿No tienes cuenta? <a href='sesion.html' id='crear'> Crear Cuenta.</a> </p>
-                    <button name="env"  id="env" onclick="return validaPass()">Ingresar</button>              
-                    
-                </div>
+
                 
            
             </form>
@@ -76,11 +53,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                <h1>ROLES</h1>
                </div>
               
-               <div id="modal1" class="modal">
+               <div id="miModal" class="modal">
                 <div class="modal-contenido">
+                  <span class="cerrar-modal">&times;</span>
                     <p>hola</p><!-- Aquí puedes colocar el contenido de tu modal -->
                     <!-- Por ejemplo, podrías poner la imagen en tamaño grande -->
-                    <img id="imagenModal" src="Imagenes/clasico.png" alt="Imagen Modal">
+                    <img id="imagenModal" src="Imagenes/manzana.png" alt="Imagen Modal">
                 </div>
             </div>
      
@@ -91,9 +69,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
       <div class="row">
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
-            <a href="" >
-              <div class="img-box" onclick="openModal('Imagenes/clasico.png')">
-                <img src="Imagenes/clasico.png" alt="" >
+            <a  >
+              <div class="img-box">
+                <img src="Imagenes/clasico.png" alt="" onclick= "abrirModal('Imagenes/clasico.png')">
               </div>
               <div class="detail-box">
                 <h6>
@@ -105,9 +83,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
-            <a href="">
+            <a>
               <div class="img-box">
-                <img src="Imagenes/manzana.png" alt=""onclick="openModal('Imagenes/clasico.png')">
+                <img src="Imagenes/manzana.png" alt="" onclick= "abrirModal('Imagenes/manzana.png')">
               </div>
               <div class="detail-box">
                 <h6>

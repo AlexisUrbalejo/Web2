@@ -42,28 +42,4 @@ function redirigirAMenu() {
         }
 
 });
-function zoomIn(image) {
-    image.style.transform = "scale(1.1)";
-}
 
-// Función para restaurar el tamaño original de la imagen al quitar el mouse de ella
-function zoomOut(image) {
-    image.style.transform = "scale(1)";
-}
-function openModal(rutaImagen) {
-    // Obtener la referencia del modal y la imagen dentro de él
-    var modal = document.getElementById("miModal");
-    var img = document.getElementById("imagenModal");
-    // Asignar la ruta de la imagen al src de la imagen modal
-    img.src = rutaImagen;
-    // Mostrar el modal
-    modal.style.display = "block";
-}
-
-// Función para cerrar el modal
-function closeModal() {
-    // Obtener la referencia del modal
-    var modal = document.getElementById("miModal");
-    // Ocultar el modal
-    modal.style.display = "none";
-}
