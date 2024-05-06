@@ -19,7 +19,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <link href="css/estilome.css" rel="stylesheet" type="text/css">
         <script src="js/jsi.js"></script>
     </head>
-    <body>
+    <body> 
              <!--Header -->
     <section id='header'>
         <div class="header">
@@ -75,6 +75,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                <div id='roles'> 
                <h1>ROLES</h1>
                </div>
+              
+               <div id="miModal" class="modal">
+                <div class="modal-contenido">
+                    <p>hola</p><!-- Aquí puedes colocar el contenido de tu modal -->
+                    <!-- Por ejemplo, podrías poner la imagen en tamaño grande -->
+                    <img id="imagenModal" src="Imagenes/clasico.png" alt="Imagen Modal">
+                </div>
+            </div>
      
   <section class="shop_section layout_padding">
     <div class="container">
@@ -83,9 +91,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
       <div class="row">
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
-            <a href="">
+            <a href="" >
               <div class="img-box">
-                <img src="Imagenes/clasico.png" alt="">
+                <img src="Imagenes/clasico.png" alt="" onclick="openModal('Imagenes/clasico.png')">
               </div>
               <div class="detail-box">
                 <h6>
@@ -99,7 +107,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
           <div class="box">
             <a href="">
               <div class="img-box">
-                <img src="Imagenes/manzana.png" alt="">
+                <img src="Imagenes/manzana.png" alt=""onclick="openModal('Imagenes/clasico.png')">
               </div>
               <div class="detail-box">
                 <h6>

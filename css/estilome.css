@@ -82,3 +82,31 @@ justify-content: center;
 .shop_section .box .detail-box h6 span {
 color: #db4f66;
 }
+
+.img-box img {
+            transition: transform 0.3s ease;
+        }
+.img-box:hover img {
+            transform: scale(1.1);
+        }
+   
+        .modal {
+          display: none;
+          position: fixed;
+          z-index: 1;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: rgba(0,0,0,0.5);
+      }
+      /* Estilo para el contenido del modal */
+      .modal-contenido {
+          background-color: #fefefe;
+          margin: 15% auto;
+          padding: 20px;
+          border: 1px solid #888;
+          width: 80%;
+          max-width: 600px;
+      }
