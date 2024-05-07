@@ -21,11 +21,14 @@ document.addEventListener("DOMContentLoaded", function() {
     var modalImage = document.getElementById('imagenModal');
 
     // Función para abrir el modal
-    function abrirModal(imageSrc) {
-        console.log("Abriendo modal"); // Verificar si se llama correctamente
-        modalImage.src = imageSrc; // Establecer la imagen del modal
-        modal.style.display = "block"; // Mostrar el modal
+    function abrirModal(imageSrc, title, description) {
+        console.log("Abriendo modal");
+        modalImage.src = imageSrc;
+        modalTitle.textContent = title; // Establecer el título del modal
+        modalDescription.textContent = description; // Establecer la descripción del modal
+        modal.style.display = "block";
     }
+    
 
     // Asignar evento de clic a cada imagen del menú
     menuImages.forEach(function(image) {

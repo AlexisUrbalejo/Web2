@@ -55,13 +55,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
               
                <div id="miModal" class="modal">
                 <div class="modal-contenido">
-                  <span class="cerrar-modal">&times;</span>
-                    <p>hola</p><!-- Aquí puedes colocar el contenido de tu modal -->
-                    <!-- Por ejemplo, podrías poner la imagen en tamaño grande -->
+                    <span class="cerrar-modal">&times;</span>
+                    <h2 id="modalTitle">hola</h2>
+                    <p id="modalDescription">hola</p>
                     <img id="imagenModal" src="Imagenes/manzana.png" alt="Imagen Modal">
                 </div>
             </div>
-     
+
   <section class="shop_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center">
@@ -69,9 +69,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
       <div class="row">
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
-            <a  >
+            <a>
               <div class="img-box">
-                <img src="Imagenes/clasico.png" alt="" onclick= "abrirModal('Imagenes/clasico.png')">
+                <img src="Imagenes/clasico.png"  onclick="abrirModal('Imagenes/clasico.png', 'clasico', 'Una deliciosa manzana fresca.')">
               </div>
               <div class="detail-box">
                 <h6>
@@ -85,7 +85,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
           <div class="box">
             <a>
               <div class="img-box">
-                <img src="Imagenes/manzana.png" alt="" onclick= "abrirModal('Imagenes/manzana.png')">
+                <img src="Imagenes/manzana.png" alt="" onclick= "abrirModal()">
               </div>
               <div class="detail-box">
                 <h6>
@@ -97,9 +97,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
-            <a href="">
+            <a >
               <div class="img-box">
-                <img src="Imagenes/moras.png" alt="">
+                <img src="Imagenes/moras.png" alt="" onclick= "abrirModal('Imagenes/manzana.png')">
               </div>
               <div class="detail-box">
                 <h6>
@@ -111,9 +111,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
-            <a href="">
+            <a >
               <div class="img-box">
-                <img src="Imagenes/duo.png" alt="">
+                <img src="Imagenes/duo.png" alt=""  onclick= "abrirModal('Imagenes/duo.png')">
               </div>
               <div class="detail-box">
                 <h6>
@@ -125,9 +125,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
-            <a href="">
+            <a >
               <div class="img-box">
-                <img src="Imagenes/fresa.png" alt="">
+                <img src="Imagenes/fresa.png" alt=""  onclick= "abrirModal('Imagenes/duo.png')">
               </div>
               <div class="detail-box">
                 <h6>
@@ -139,9 +139,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
-            <a href="">
+            <a >
               <div class="img-box">
-                <img src="Imagenes/lotus.png" alt="">
+                <img src="Imagenes/lotus.png" alt=""  onclick= "abrirModal('Imagenes/duo.png')">
               </div>
               <div class="detail-box">
                 <h6>
@@ -153,9 +153,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
-            <a href="">
+            <a >
               <div class="img-box">
-                <img src="Imagenes/smores.png" alt="">
+                <img src="Imagenes/smores.png" alt=""  onclick= "abrirModal('Imagenes/duo.png')">
               </div>
               <div class="detail-box">
                 <h6>
@@ -167,9 +167,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
-            <a href="">
+            <a >
               <div class="img-box">
-                <img src="Imagenes/nuez.png" alt="">
+                <img src="Imagenes/nuez.png" alt=""  onclick= "abrirModal('Imagenes/duo.png')">
               </div>
               <div class="detail-box">
                 <h6>
@@ -190,9 +190,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
       <div class="row">
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
-            <a href="">
+            <a >
               <div class="img-box">
-                <img src="Imagenes/toffee.png" alt="">
+                <img src="Imagenes/toffee.png" alt="" onclick= "abrirModal('Imagenes/duo.png')">
               </div>
               <div class="detail-box">
                 <h6>
@@ -204,9 +204,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
-            <a href="">
+            <a >
               <div class="img-box">
-                <img src="Imagenes/cajeta.png" alt="">
+                <img src="Imagenes/cajeta.png" alt="" onclick= "abrirModal('Imagenes/duo.png')">
               </div>
               <div class="detail-box">
                 <h6>
@@ -218,9 +218,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
-            <a href="">
+            <a >
               <div class="img-box">
-                <img src="Imagenes/sanwis.png" alt="">
+                <img src="Imagenes/sanwis.png" alt=""  onclick= "abrirModal('Imagenes/duo.png')">
               </div>
               <div class="detail-box">
                 <h6>
@@ -232,9 +232,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="box">
-            <a href="">
+            <a>
               <div class="img-box">
-                <img src="Imagenes/bites.png" alt="">
+                <img src="Imagenes/bites.png" alt="" onclick= "abrirModal('Imagenes/duo.png')">
               </div>
               <div class="detail-box">
                 <h6>

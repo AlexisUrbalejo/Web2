@@ -103,3 +103,10 @@ color: #db4f66;
           text-decoration: none;
           cursor: pointer;
       }   
+      .modal-contenido img {
+        max-width: 50%;
+        max-height: 100%;
+        display: block;
+        margin: auto;
+    }
+    
