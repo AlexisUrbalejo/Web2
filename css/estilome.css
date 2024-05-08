@@ -25,17 +25,10 @@ h1{
      text-shadow:2px 2px 0px #FEA808;
  }
 
-a,
-a:hover,
-a:focus {
-text-decoration: none;
-}
-
-a:hover,
-a:focus {
-color: initial;
-}
-
+ h6:hover{
+  color:white;
+ }
+ 
 .img-box img {
   width: 70%; 
   height: 130%;
@@ -99,7 +92,7 @@ color: #db4f66;
       
       .cerrar-modal:hover,
       .cerrar-modal:focus {
-          color: black;
+          color: white;
           text-decoration: none;
           cursor: pointer;
       }   

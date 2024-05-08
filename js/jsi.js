@@ -43,3 +43,25 @@ function redirigirAMenu() {
 
 });
 
+var imagenes = document.querySelectorAll('.scroll-container img');
+var index = 0;
+
+// Función para mostrar la siguiente imagen
+function mostrarSiguienteImagen() {
+    imagenes[index].style.display = 'none';
+    index = (index + 1) % imagenes.length;
+    imagenes[index].style.display = 'block';
+}
+
+// Establece un intervalo para cambiar las imágenes automáticamente
+var intervalo = setInterval(mostrarSiguienteImagen, 3000); // Cambia cada 3 segundos
+
+// Detiene el intervalo al pasar el mouse sobre las imágenes
+document.querySelector('.scroll-container').addEventListener('mouseenter', function() {
+    clearInterval(intervalo);
+});
+
+// Reinicia el intervalo al quitar el mouse de las imágenes
+document.querySelector('.scroll-container').addEventListener('mouseleave', function() {
+    intervalo = setInterval(mostrarSiguienteImagen, 3000);
+});
